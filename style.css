@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#FBE9E7,#FFCCBC);
+    color: black;
+}
+
+.container {
+    min-width: 340px;
+    width: 340px;
+    height: 640px;
+    border-top: 5px solid rgba(255, 255, 255, 0.5);
+    border-left: 5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header,
+.footer {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.display {
+    background: radial-gradient(#2962FF, #E1F5FE);
+    height: 80%;
+    width: 94%;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.brand img {
+    background: white;
+    border-radius: 8px;
+}
+
+.wrap {
+    width: 600px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    overflow: auto;
+}
+
+.bestProducts {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 50%;
+    display: flex;
+    transition: all 1s;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 130px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #FFEBEE;
+}
+
+.product img {
+    width: 70%;
+    cursor: pointer;
+}
+
+.product i {
+    color: #FF6F00;
+}
+
+.activProducts {
+    width: 300px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.activProducts input {
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.activProducts .stars i {
+    color: #FFA000;
+}
+
+#back {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 2.2rem;
+    color: white;
+    background-color: #01579B;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5)
+}
+#back:active{
+transform: scale(0.9);
+}
+
+#number,
+#carts {
+    position: absolute;
+    left: 20%;
+    bottom: 7%;
+    margin-top: 10px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5)
+}
+
+#carts {
+    left: 60%;
+    background: #00BFA5;
+    border-radius: 15px;
+    color: white;
+    
+  
+}
+#carts:active{
+transform: scale(0.90);
+}
+
+#number::placeholder {
+    color: seagreen;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    background-color: crimson;
+    color: white;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.cart {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 40px;
+}
+
+.cart i {}
+
+.cart img {
+    width: 15%;
+}
+
+.cart li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.cart .total {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: red;
+}
+
+.cart .pay a {
+    text-decoration: none;
+    background-color: #00BFA5;
+    padding: 0 40px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: white;
+}
+.cart .pay:active{
+    transform: scale(0.9);
+}
+
+.cart .pay i {
+    margin-left: 15px;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer button {
+    position: absolute;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #4285f4;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+}
+.footer button:active{
+    transform: scale(1.1);
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer .fa-heart {
+    color: red;
+}
+
+.active {
+    display: none;
+}
+
+.active1 {
+    left: 15px;
+    transition: 1s;
+}
+
+.flex {
+    display: flex;
+}
